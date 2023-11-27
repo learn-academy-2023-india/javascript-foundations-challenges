@@ -19,8 +19,8 @@ const arr1 = [3, 9, 15, 4, 10]
 
 // .map === function(arg)
 const cuber1 = (arr1) => {
-	return arr1.map(number => {
-		return number * 3
+	return arr1.map(arr1 => {
+		return arr1 * 10
 	})
 }
 console.log(cuber1(arr1))
@@ -33,15 +33,23 @@ console.log(cuber1(arr1))
 const arr2 = [3, 9, 15, 4, 10]
 // output: [1.5, 4.5, 7.5, 2, 5]
 
-// .filter === fn(arg)
+ //.filter === fn(arg)
 const cuber2 = (arr2) => {
-	return arr2.filter(number => {
-		return (number / 2)
+	return arr2.filter(arr2 => {
+		return arr2 % 2 === 0
 	})
 }
 console.log(cuber2(arr2))
+//  const cuber2 = (arr2,index) => {
+//  	return arr2.filter(number => {
+//  		 for(i = 0 ; i < arr2.length; i++) {
+//  		 	console.log((number % 2 === 0))
+//  		}
+//  	})
+//  }
+//  console.log(cuber2(arr2))
 
-
+//  console.log(arr2.length)
 // Create a function that takes in an array of numbers and returns an array with only odd numbers.
 // const arr2 = [2, 7, 3, 5, 8, 10, 13, -9]
 // // output: [7, 3, 5, 13, -9]
