@@ -6,14 +6,25 @@
 //   homePlanet: "Earth",
 // addUp: function() {
 //     return `${this.firstName} ${this.lastName} is from ${this.homePlanet}`
+// } }
+
+
+// const person = {
+//     firstName: "Arthur",
+//     lastName: "Dent",
 // }
-// }
+// person.homePlanet = "Earth"
+// console.log(person);
+// ANOTHER WAY TO PUSH IT TO OG OBJECTS***
+
+
 // // Write the code that accesses the first name of the person object.
 // console.log(person.firstName);
 // // Write the code that accesses the last name of the person object.
 // console.log(person.lastName);
 // // Write the code that gives the person object a property of homePlanet and set it to 'Earth'.
-// console.log(person.homePlanet);
+
+
 // // Update the person object with a method that logs "Arthur Dent is from planet Earth".
 // console.log(person.addUp());
 
@@ -47,27 +58,17 @@
 //     }
 // } ANOTHER WAY TO DO IT W/ PARSE***
 
-const product = {
-    name: "chair",
-    price: 24.99,
-    totalWithTax: function() {
-        const totalPriceWithTax = this.price + (this.price * 0.07)
-        return totalPriceWithTax.toFixed(2); // Round to two decimals
-    }
-}
-console.log(product.totalWithTax()); 
-
-// Output: 26.74
-
-
 // const product = {
 //     name: "chair",
 //     price: 24.99,
-//     addUp: function(totalWithTax) {
-//       return `${this.price} `
+//     totalWithTax: function() {
+//         const totalPriceWithTax = this.price + (this.price * 0.07)
+//         return totalPriceWithTax.toFixed(2); // Round to two decimals
 //     }
-//   }
-//   console.log(product.addUp() + (product.addUp() * .07))
+// }
+// console.log(product.totalWithTax()); 
+// Output: 26.74
+
 // Consider this variable:
 
 // const lunch = {
@@ -76,9 +77,41 @@ console.log(product.totalWithTax());
 //   ingredients: ["bread", "peanut butter", "banana"]
 // }
 // Write the code that accesses the ingredients property.
+// console.log(lunch.ingredients);
+
 // Write the code that access the third ingredient of the lunch object.
+// console.log(lunch.ingredients[2]);
+
 // Write a function that takes the lunch object as an argument and returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+
+
+// const lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+// }
+// // console.log(lunch.recipe1());
+// // const sandwich = (object) => {
+// // } 
+// console.log(sandwich(lunch));
+
+// const lunch = (object) => {
+//     return `The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana.`
+// }
+// console.log(lunch())
+// SIMPLIFIED CORRECT VERSION****
+
 // Update the lunch object with method that returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
+// const lunch = {
+//     name: "PB and Banana",
+//     type: "sandwich",
+//     ingredients: ["bread", "peanut butter", "banana"],
+//   recipe1: function() {
+//       return `The ingredients for a ${this.name} ${this.type} are ${this.ingredients}. `
+//   }
+// }
+// console.log(lunch.recipe1())
+// OVERCOMPLICATED still correct****
 // Consider this variable:
 
 // const animals = [
