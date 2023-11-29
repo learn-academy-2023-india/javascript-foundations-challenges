@@ -1,5 +1,5 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired.
-describe("work", (string) => {
+describe("work", () => {
     it("is a function that returns 'drink coffee' if you are tired and 'keep working' if you are not tired.", () => {
       expect(work(string)).toEqual("drink coffee")
       expect(work(string)).toEqual("keep working")
