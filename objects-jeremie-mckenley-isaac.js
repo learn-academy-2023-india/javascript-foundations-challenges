@@ -83,25 +83,47 @@ console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingre
 // 1. lunch() => {
 //    returns "The ingredients for a PB and Banana sandwich are bread, peanut butter, and banana."
 // }
-
-
-var sandwichIngredients = lunch.filter( object => {
-	return 'The ingredients for a PB and Banana sandwich are ' + (object.ingredients.join()) + "."
-})
-console.log(sandwichIngredients)
+lunch.describe = () => {
+        return 'The ingredients for a ' + lunch.name + ' ' + lunch.type + ' are ' + lunch.ingredients + '.'
+}
+console.log(lunch.describe())
 
 
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
 // Consider this variable:
-// const animals = [
-//     { name: "Waffles", type: "dog", age: 7 },
-//     { name: "Fluffy", type: "cat", age: 14 },
-//     { name: "Spelunky", type: "dog", age: 4 },
-//     { name: "Hank", type: "cat", age: 11 }
-//   ]
+const animals = [
+    { name: "Waffles", type: "dog", age: 7 },
+    { name: "Fluffy", type: "cat", age: 14 },
+    { name: "Spelunky", type: "dog", age: 4 },
+    { name: "Hank", type: "cat", age: 11 }
+]
+// 1. take animal arrays 
+// 2. take animal arrays and return a new array with key type values
+var type = animals.filter(object => {
+    return object.type === "cat"
+})
+console.log(type)
+
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+var animalName = animals.map(object => {
+    return object.name
+})
+console.log(animalName)
+
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+var plusTen = animals.filter(object => {
+    return object.age >= 10
+})
+console.log(plusTen)
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
+// 1. take an array of animal objects
+// 2. return an array with the animal objects joined. 
+for(let )
+console.log(( (animals.name) + (animals.type) + "."))
+console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
+console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
+console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
+
 // Consider this variable:
 
 // const author = {
