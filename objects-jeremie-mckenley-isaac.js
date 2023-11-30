@@ -116,39 +116,76 @@ var plusTen = animals.filter(object => {
 })
 console.log(plusTen)
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
-// 1. take an array of animal objects
-// 2. return an array with the animal objects joined. 
-for(let )
-console.log(( (animals.name) + (animals.type) + "."))
-console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
-console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
-console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingredients.join()) + "."))
+// 1. function([animals]) () => 
+// 2. return ["sentence about each of the {animals}"]
+
+console.log(( 'Sentence about each of the ' + (animalName.join(", ")) + "."))
+
+// Consider this variable:
+const author = {
+  name: "H. G. Wells",
+  genre: "science fiction"
+}
+const { name, genre } = author
+// Write the code that destructures the author object so that the following code snippet will run successfully: console.log(`${name} is a ${genre} author`)
+// 1. author()
+// 2. return author.name + author.genre
+
+
+
+// console.log(( 'H. G. Wells is a science fiction author ' + (author.name.join(", ")) + "."))
+
+console.log(`${name} is a ${genre} author`)
+
+// output: "H. G. Wells is a science fiction author"
+
 
 // Consider this variable:
 
-// const author = {
-//   name: "H. G. Wells",
-//   genre: "science fiction"
-// }
-// Write the code that destructures the author object so that the following code snippet will run successfully:
-// console.log(`${name} is a ${genre} author`)
-// // output: "H. G. Wells is a science fiction author"
-// Consider this variable:
 
-// const pokeOne = {
-//   species: "Charmandar",
-//   pokemon_type: "Fire"
+const pokeOne = {
+  species: "Charmandar",
+  pokemon_type: "Fire"
+}
+
+const pokeTwo = {
+  species: "Magikarp",
+  pokemon_type: "Water"
+}
+
+// const allPokemon = () => {
+//     for (let i)
 // }
 
-// const pokeTwo = {
-//   species: "Magikarp",
-//   pokemon_type: "Water"
-// }
 // Create a function called describePokemon that take an object like the ones above and uses destructuring to return a description of the Pokemon so that the following code snippet will run successfully:
+
+const describePokemon = () => {
+    return pokeOne.species
+}
+
+console.log(`${pokeOne.species} is a ${pokeOne.pokemon_type} pokemon`)
+const { species, pokemon_type } = pokeOne
+console.log(describePokemon(pokeOne))
+
+
+// const describePokemon = () => {
+//     return pokeOne.species
+// }
+// console.log(`${species()} is a ${pokemon_type()} pokemon`)
+// const { species, pokemon_type } = pokeOne
 // console.log(describePokemon(pokeOne))
-// // output: "Charmandar is a Fire pokemon"
+// output: "Charmandar is a Fire pokemon"
+
 // console.log(describePokemon(pokeTwo))
 // // output: "Magikarp is a Water pokemon"
+
+
+
+
+
+
+
+
 // Consider this variable:
 
 // const triangleDimensions = {
@@ -166,6 +203,8 @@ console.log(( 'The ingredients for a PB and Banana sandwich are ' + (lunch.ingre
 //     2023: ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet"]
 //   }
 // }
+
+// learn.cohorts.2023
 // Write the code that logs the name of your cohort.
 // Write the code that uses destructuring to log the name of your cohort.
 // Create a function that takes an object like the one above and returns an array with a string of every cohort name and year.
