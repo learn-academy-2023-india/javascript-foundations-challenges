@@ -63,12 +63,25 @@ class Latte {
         }
     }
 }
-// A flavour latte
-const regLatte = new Latte("regular","almond", 1)
+
+const regLatte = new Latte("regular","", 1)
 console.log(regLatte.latteProfile())
 // Write the code that makes a double shot, hazelnut latte with almond milk.
+const dHazLatte = new Latte ("hazelnut", "almond", 2)
+
+
 // Log the double shot, hazelnut latte with almond milk's profile.
+console.log(dHazLatte.latteProfile())
+
 // Volume of a Cylinder: create a class for Cylinder
+class Cylinder {
+      constructor (pi, radius, height)
+      this.pi = Math.PI
+      this.radius = radius
+      this.height
+}
+
+
 // Write a class that calculates the volume of a Cylinder: v = πr^2h (r is the radius and h is the height of the cylinder)
 // Write the code that rounds the volume of the cylinder to four decimal places
 // Write the code that creates three unique cylinder objects
