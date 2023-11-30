@@ -108,26 +108,39 @@ console.log (`The ingredients for a ${name1} ${type} are ${ingredients.join(`, `
 
 // Consider this variable:
 
-const animals = [
-  { name: "Waffles", type: "dog", age: 7 },
-  { name: "Fluffy", type: "cat", age: 14 },
-  { name: "Spelunky", type: "dog", age: 4 },
-  { name: "Hank", type: "cat", age: 11 }
-]
+    // const animals = [
+    // { name: "Waffles", type: "dog", age: 7 },
+    // { name: "Fluffy", type: "cat", age: 14 },
+    // { name: "Spelunky", type: "dog", age: 4 },
+    // { name: "Hank", type: "cat", age: 11 }
+    // ]
 // Create a function that takes in an array of animal objects and returns a new array with only the objects that are cats.
 
-
+const cat = animals.filter((value) => value.type === "cat")
+console.log(cat)
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
 
-
+var aniNames = animals.map(value => {
+    return value.name
+})
+console.log(aniNames)
 
 // Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 
-
+var oldAF = animals.filter(object => {
+    return object.age >=10
+})
+console.log(oldAF)
 
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 
+const animals = [
+    { name: "Waffles", type: "dog", age: 7 },
+    { name: "Fluffy", type: "cat", age: 14 },
+    { name: "Spelunky", type: "dog", age: 4 },
+    { name: "Hank", type: "cat", age: 11 },
+    ]
 
 
 // Consider this variable:
