@@ -134,15 +134,35 @@
 // { name: 'Hank', type: 'cat', age: 11 }
 
 // Create a function that takes in an array of animal objects and returns a new array with only the names of the animals.
+
+// const animals = [
+//     { name: "Waffles", type: "dog", age: 7 },
+//     { name: "Fluffy", type: "cat", age: 14 },
+//     { name: "Spelunky", type: "dog", age: 4 },
+//     { name: "Hank", type: "cat", age: 11 }
+//   ]
+//   const onlyName = animals.map(value => {
+//         return value.name
+//     })
+    
+//     console.log(onlyName)
+
+
+// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
+
 const animals = [
     { name: "Waffles", type: "dog", age: 7 },
     { name: "Fluffy", type: "cat", age: 14 },
     { name: "Spelunky", type: "dog", age: 4 },
     { name: "Hank", type: "cat", age: 11 }
   ]
+  const onlyAge = animals.filter(value => {
+         return number.age > 10
+    })
+    
+    console.log(onlyAge)
 
 
-// Create a function that takes in an array of animal objects and returns a new array of the names of the animals that are more than 10 years old.
 // Create a function that takes in an array of animal objects and returns a new array with a sentence about each animal.
 // Consider this variable:
 
